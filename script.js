@@ -1175,7 +1175,7 @@ const labData = [
   
       // Check if the search input is empty
       if (searchInput.trim() === '') {
-          resultsContainer.innerHTML = '<p></p>';
+          resultsContainer.innerHTML = '<p>Please enter a tool to search.</p>';
           return; // Exit the function if the input is empty
       }
   
@@ -1206,5 +1206,19 @@ const labData = [
   document.getElementById('searchInput').addEventListener('keypress', function(event) {
       if (event.key === 'Enter') {
           searchLabs();
+      }
+  });
+
+  // Add event listener for theme toggle
+  document.getElementById('themeToggle').addEventListener('click', function() {
+      document.body.classList.toggle('light-mode');
+      const container = document.querySelector('.container');
+      container.classList.toggle('light-mode');
+
+      // Change the button icon based on the current mode
+      if (document.body.classList.contains('light-mode')) {
+          this.textContent = '🌤️'; // Sun icon for light mode
+      } else {
+          this.textContent = '🌙'; // Moon icon for dark mode
       }
   });

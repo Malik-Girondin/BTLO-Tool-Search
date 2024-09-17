@@ -26,8 +26,11 @@ h1 {
 }
 
 .search-container {
+    position: relative; /* Ensure positioning for the glow effect */
     display: flex;
     margin-bottom: 1.5rem;
+    border-radius: 4px; /* Rounded corners for the container */
+    transition: box-shadow 0.3s; /* Smooth transition for glow effect */
 }
 
 input {
@@ -38,6 +41,13 @@ input {
     border-radius: 4px 0 0 4px;
     background-color: #333; /* Dark input background */
     color: #ffffff; /* White text */
+    transition: box-shadow 0.3s; /* Smooth transition for glow effect */
+}
+
+/* Add glowing effect on focus */
+input:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px #00ccff, 0 0 10px #00ccff; /* Blue glow effect */
 }
 
 button {
@@ -65,16 +75,40 @@ button:hover {
     border-radius: 4px;
     padding: 1rem;
     margin-bottom: 1rem;
+    color: #ffffff; /* White text for dark mode */
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background-color: #ffffff; /* Light background */
+    color: #000000; /* Black text */
+}
+
+.container.light-mode {
+    background-color: #f0f8ff; /* Light sky blue for container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.lab-item.light-mode {
+    background-color: #ffeb3b; /* Light yellow for lab item */
+    border: 1px solid #ffc107; /* Golden border */
+    color: #000000; /* Black text for light mode */
 }
 
 .lab-item h3 {
-    margin-top: 0;
-    color: #00ccff; /* Cyan color for lab names */
+    color: #00ccff; /* Keep lab names in cyan for both modes */
 }
 
 .lab-item p {
     margin: 0.5rem 0;
-    color: #cccccc; /* Light gray for text */
+    color: #ffffff; /* White text for Scenario and Text */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Light Mode Styles for paragraph in lab items */
+.lab-item.light-mode p {
+    color: #ede352; /* Light yellow for light mode */
+    font-weight: bold; /* Make text bold */
 }
 
 .signup-link {
@@ -87,4 +121,15 @@ button:hover {
 
 .signup-link:hover {
     text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Discreet toggle button */
+#themeToggle {
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 1.5rem; /* Increase font size */
+    cursor: pointer; /* Pointer cursor */
 }
