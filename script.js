@@ -1,0 +1,1194 @@
+const labData = [
+    {
+      "Lab Name": "1down",
+      "Scenario": "Easy Reverse Engineering",
+      "Tools": [
+        "OnenoteAnalyzer",
+        "CyberChef",
+        "Text Editor",
+        "DecoderTool"
+      ]
+    },
+    {
+      "Lab Name": "Anakus",
+      "Scenario": "Easy Reverse Engineering",
+      "Tools": [
+        "CyberChef",
+        "Detect it Easy",
+        "Regshot",
+        "SysinternalsSuite",
+        "Thunderbird",
+        "Timeline Explorer",
+        "Wireshark"
+      ]
+    },
+    {
+      "Lab Name": "andRE",
+      "Scenario": "Medium Reverse Engineering",
+      "Tools": [
+        "apktool",
+        "smali",
+        "java",
+        "d2j",
+        "jd-gui",
+        "unicode",
+        "Google Translate"
+      ]
+    },
+    {
+      "Lab Name": "Attacks",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "Event Viewer"
+      ]
+    },
+    {
+      "Lab Name": "Awwdit",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "Group Policy",
+        "Auditpol",
+        "Event Viewer"
+      ]
+    },
+    {
+      "Lab Name": "Baby",
+      "Scenario": "Medium Digital Forensics",
+      "Tools": [
+        "Sluethkit",
+        "ewf-tools",
+        "john",
+        "sqlite3",
+        "pdfcrack"
+      ]
+    },
+    {
+      "Lab Name": "Backstage",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "Wireshark",
+        "Log Analysis"
+      ]
+    },
+    {
+      "Lab Name": "Bad Logic",
+      "Scenario": "Hard Digital Forensics",
+      "Tools": [
+        "EventViewer",
+        "Wireshark",
+        "TShark",
+        "MFTExplorer",
+        "CLI"
+      ]
+    },
+    {
+      "Lab Name": "Banker",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "Volatility2",
+        "Linux CLI"
+      ]
+    },
+    {
+      "Lab Name": "Basilisk P2",
+      "Scenario": "Medium Reverse Engineering",
+      "Tools": [
+        "ProcMon",
+        "ProcExp",
+        "RegShot",
+        "FakeNet"
+      ]
+    },
+    {
+      "Lab Name": "Basilisk PT 1",
+      "Scenario": "Easy Reverse Engineering",
+      "Tools": [
+        "BinTexT",
+        "CFFExplorer",
+        "PEiD",
+        "ExeInfo",
+        "PEView"
+      ]
+    },
+    {
+      "Lab Name": "Beacon",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "CyberChef",
+        "Oledump",
+        "Cobalt Strike",
+        "Python3.7",
+        "Linux CLI"
+      ]
+    },
+    {
+      "Lab Name": "Ben",
+      "Scenario": "Easy Reverse Engineering",
+      "Tools": [
+        "Noriben",
+        "Kernel EML Viewer",
+        "FTK Imager"
+      ]
+    },
+    {
+      "Lab Name": "BITS",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "BitsParser",
+        "CMD",
+        "Sublime Text"
+      ]
+    },
+    {
+      "Lab Name": "Blaster",
+      "Scenario": "Medium Reverse Engineering",
+      "Tools": [
+        "CyberChef",
+        "Cryptography",
+        "OSINT"
+      ]
+    },
+    {
+      "Lab Name": "Blocker",
+      "Scenario": "Easy Security Operations",
+      "Tools": [
+        "Sysmon",
+        "Event Viewer",
+        "OSINT"
+      ]
+    },
+    {
+      "Lab Name": "BOT",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "Linux CLI"
+      ]
+    },
+    {
+      "Lab Name": "Browser Bruises",
+      "Scenario": "Medium Digital Forensics",
+      "Tools": [
+        "dumpzilla"
+      ]
+    },
+    {
+      "Lab Name": "Brute",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "Notepad++",
+        "MySQL"
+      ]
+    },
+    {
+      "Lab Name": "Caesar Salad EP 1",
+      "Scenario": "Easy Digital Forensics",
+      "Tools": [
+        "CyberChef",
+        "Notepad",
+        "LeafPad"
+      ]
+    },
+    {
+      "Lab Name": "Caesar Salad EP 2",
+      "Scenario": "Easy Digital Forensics",
+      "Tools": [
+        "CyberChef",
+        "Text Editor"
+      ]
+    },
+    {
+      "Lab Name": "Caesar Salad EP 3",
+      "Scenario": "Medium Digital Forensics",
+      "Tools": [
+        "CyberChef",
+        "Text Editor"
+      ]
+    },
+    {
+      "Lab Name": "Certutil",
+      "Scenario": "Medium Digital Forensics",
+      "Tools": [
+        "CMD",
+        "strings",
+        "OSINT"
+      ]
+    },
+    {
+      "Lab Name": "Cipher",
+      "Scenario": "Medium Threat Intelligence",
+      "Tools": [
+        "Ciphey",
+        "Fim",
+        "w3m"
+      ]
+    },
+    {
+      "Lab Name": "Constrained",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "OneNoteAnalyzer",
+        "pestudio",
+        "strings",
+        "ExtractAllScripts",
+        "Text Editor"
+      ]
+    },
+    {
+      "Lab Name": "Corporate Espionage PT 1",
+      "Scenario": "Easy Digital Forensics",
+      "Tools": [
+        "EZViewer",
+        "AnalyzeMFT.py",
+        "Python3"
+      ]
+    },
+    {
+      "Lab Name": "Countdown",
+      "Scenario": "Medium Digital Forensics",
+      "Tools": [
+        "Autopsy",
+        "Window File Analyzer",
+        "Jumplist Explorer",
+        "WinPrefetchView",
+        "SQLite DB Browser"
+      ]
+    },
+    {
+      "Lab Name": "Counter",
+      "Scenario": "Hard Reverse Engineering",
+      "Tools": [
+        "IDA",
+        "x32dbg"
+      ]
+    },
+    {
+      "Lab Name": "Cov",
+      "Scenario": "Easy Reverse Engineering",
+      "Tools": [
+        "dnSpy",
+        "CyberChef",
+        "OSINT"
+      ]
+    },
+    {
+      "Lab Name": "Covert",
+      "Scenario": "Hard Incident Response",
+      "Tools": [
+        "Wireshark",
+        "PowerShell",
+        "Editor"
+      ]
+    },
+    {
+      "Lab Name": "Cozy Bear",
+      "Scenario": "Hard Security Operations",
+      "Tools": [
+        "ELK",
+        "Sysmon"
+      ]
+    },
+    {
+      "Lab Name": "Cozy Bear 2",
+      "Scenario": "Medium Security Operations",
+      "Tools": [
+        "ELK",
+        "MITRE ATT&CK",
+        "Windows Event Log",
+        "Sysmon",
+        "Cyberkill Chain"
+      ]
+    },
+    {
+      "Lab Name": "Crack",
+      "Scenario": "Easy Security Operations",
+      "Tools": [
+        "JSON Crack",
+        "Linux CLI"
+      ]
+    },
+    {
+      "Lab Name": "Crypto",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "Wireshark",
+        "PowerShell Analysis",
+        "Volatility",
+        "Grep"
+      ]
+    },
+    {
+      "Lab Name": "Cursed Tomb - Halloween 23",
+      "Scenario": "Hard Incident Response",
+      "Tools": [
+        "Windows Event Viewer",
+        "Arsenal Image Mounter",
+        "kape",
+        "Volatility",
+        "Sysinternals",
+        "cmdline",
+        "certutil",
+        "powershell"
+      ]
+    },
+    {
+      "Lab Name": "Cyberpunk",
+      "Scenario": "Easy Reverse Engineering",
+      "Tools": [
+        "Procmon",
+        "Strings",
+        "Regshot",
+        "PowerShell",
+        "CyberChef"
+      ]
+    },
+    {
+      "Lab Name": "Deep Blue",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "DeepBlueCLI",
+        "PowerShell",
+        "Event Viewer"
+      ]
+    },
+    {
+      "Lab Name": "Deep Phish",
+      "Scenario": "Medium Security Operations",
+      "Tools": [
+        "Thunderbird",
+        "Text Editor",
+        "Chrome Developer Tools",
+        "Wireshark"
+      ]
+    },
+    {
+      "Lab Name": "Defaced",
+      "Scenario": "Easy Security Operations",
+      "Tools": [
+        "ELK"
+      ]
+    },
+    {
+      "Lab Name": "Defender",
+      "Scenario": "Medium Digital Forensics",
+      "Tools": [
+        "Event Viewer",
+        "Command Prompt",
+        "Registry Editor"
+      ]
+    },
+    {
+      "Lab Name": "Derailed - Winter 23",
+      "Scenario": "Easy Threat Intelligence",
+      "Tools": [
+        "CyberChef",
+        "PeStudio",
+        "Visual Studio Code",
+        "Chrome Dev Tools",
+        "Notepad++",
+        "ChatGPT"
+      ]
+    },
+    {
+      "Lab Name": "Dissect",
+      "Scenario": "Easy Digital Forensics",
+      "Tools": [
+        "dissect"
+      ]
+    },
+    {
+      "Lab Name": "Divorce Court",
+      "Scenario": "Hard Incident Response",
+      "Tools": [
+        "PE Studio",
+        "HxD",
+        "Volatility 3",
+        "IDA",
+        "x64dbg",
+        "FTK Imager"
+      ]
+    },
+    {
+      "Lab Name": "Doctor",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "Linux CLI"
+      ]
+    },
+    {
+      "Lab Name": "DOT",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "ProcDOT",
+        "Procmon",
+        "Wireshark"
+      ]
+    },
+    {
+      "Lab Name": "Drilldown",
+      "Scenario": "Medium Incident Response",
+      "Tools": [
+        "Splunk",
+        "VirusTotal"
+      ]
+    },
+    {
+      "Lab Name": "Ducker",
+      "Scenario": "Medium Security Operations",
+      "Tools": [
+        "Docker"
+      ]
+    },
+    {
+      "Lab Name": "Emperor Penguin",
+      "Scenario": "Medium Reverse Engineering",
+      "Tools": [
+        "HashMyFiles",
+        "Yara",
+        "Python",
+        "DnSpyEx",
+        "Visual Studio"
+      ]
+    },
+    {
+      "Lab Name": "Enter The Dragon",
+      "Scenario": "Easy Reverse Engineering",
+      "Tools": [
+        "Ghidra"
+      ]
+    },
+    {
+      "Lab Name": "Eradication",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "yarGen",
+        "Yara",
+        "Joesandbox"
+      ]
+    },
+    {
+      "Lab Name": "Eric",
+      "Scenario": "Medium Digital Forensics",
+      "Tools": [
+        "Volatility",
+        "xxd",
+        "grep",
+        "ghex",
+        "bless"
+      ]
+    },
+    {
+      "Lab Name": "Evil Maid",
+      "Scenario": "Hard Digital Forensics",
+      "Tools": [
+        "SIFT",
+        "evtx_dump",
+        "sleuthkit",
+        "impacket",
+        "regripper",
+        "hivex"
+      ]
+    },
+    {
+      "Lab Name": "Exceltium",
+      "Scenario": "Medium Reverse Engineering",
+      "Tools": [
+        "XORSearch",
+        "oledump",
+        "scdbg",
+        "msoffcrypto-crack.py"
+      ]
+    },
+    {
+      "Lab Name": "Exposed",
+      "Scenario": "Easy Security Operations",
+      "Tools": [
+        "GitTools",
+        "Nuclei"
+      ]
+    },
+    {
+      "Lab Name": "Exxtensity",
+      "Scenario": "Easy Security Operations",
+      "Tools": [
+        "Web Browser",
+        "Text Editor",
+        "Wireshark",
+        "ExtAnalysis"
+      ]
+    },
+    {
+      "Lab Name": "Fingerprint",
+      "Scenario": "Easy Security Operations",
+      "Tools": [
+        "Wireshark",
+        "Linux CLI"
+      ]
+    },
+    {
+      "Lab Name": "First Day",
+      "Scenario": "Medium Reverse Engineering",
+      "Tools": [
+        "VirusTotal",
+        "PEstudio",
+        "OSINT",
+        "Procmon",
+        "IDA"
+      ]
+    },
+    {
+      "Lab Name": "First Week",
+      "Scenario": "Hard Reverse Engineering",
+      "Tools": [
+        "John",
+        "YARA",
+        "CyberChef",
+        "DiE",
+        "PEStudio",
+        "Text Editor",
+        "OSINT",
+        "dnSpy"
+      ]
+    },
+    {
+      "Lab Name": "Flaws",
+      "Scenario": "Easy Incident Response",
+      "Tools": [
+        "Jupyter Notebook"
+      ]
+    },
+    {
+      "Lab Name": "Follow My Lead",
+      "Scenario": "Easy Digital Forensics",
+      "Tools": [
+        "EDD",
+        "FTKi",
+        "Kape",
+        "Timeline Explorer",
+        "OSINT"
+      ]
+    },
+    {
+      "Lab Name": "Follow my Lead 2",
+      "Scenario": "Easy Digital Forensics",
+      "Tools": [
+        "Arsenal Image Mounter",
+        "Kape",
+        "Timeline Explorer"
+      ]
+    },
+    {
+      "Lab Name": "Follow My Lead 3",
+      "Scenario": "Easy Digital Forensics",
+      "Tools": [
+        "NirSoft Web Browser Tools Package"
+      ]
+      },
+      {
+        "Lab Name": "Forked Tongue",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "LibreOffice",
+          "CyberChef",
+          "Text Editor",
+          "OSINT",
+          "HxD"
+        ]
+      },
+      {
+        "Lab Name": "Foxy",
+        "Scenario": "Easy Threat Intelligence",
+        "Tools": [
+          "Linux CLI",
+          "Gnumeric",
+          "Text Editor",
+          "OSINT"
+        ]
+      },
+      {
+        "Lab Name": "Frontier",
+        "Scenario": "Easy Security Operations",
+        "Tools": [
+          "Potatu Bot Beacon",
+          "AWK",
+          "CyberChef",
+          "File",
+          "Bash"
+        ]
+      },
+      {
+        "Lab Name": "Ghosted",
+        "Scenario": "Hard Incident Response",
+        "Tools": [
+          "Wireshark",
+          "OSINT",
+          "Linux CLI"
+        ]
+      },
+      {
+        "Lab Name": "Gotham",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "IDA",
+          "OSINT"
+        ]
+      },
+      {
+        "Lab Name": "Grab",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "Sysinternals",
+          "UPX"
+        ]
+      },
+      {
+        "Lab Name": "GrumpyDev",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "jq",
+          "Text Editor"
+        ]
+      },
+      {
+        "Lab Name": "Hash It Out",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "Certutil",
+          "PeStudio",
+          "Thunderbird",
+          "Wireshark",
+          "Ghidra",
+          "7-Zip"
+        ]
+      },
+      {
+        "Lab Name": "Hashish",
+        "Scenario": "Medium Security Operations",
+        "Tools": [
+          "impacket"
+        ]
+      },
+      {
+        "Lab Name": "Heaven",
+        "Scenario": "Easy Reverse Engineering",
+        "Tools": [
+          "x64Dbg",
+          "dnSpy",
+          "HxD",
+          "DiE",
+          "rtdump.py"
+        ]
+      },
+      {
+        "Lab Name": "Honey",
+        "Scenario": "Medium Digital Forensics",
+        "Tools": [
+          "Redline"
+        ]
+      },
+      {
+        "Lab Name": "Hooked",
+        "Scenario": "Hard Incident Response",
+        "Tools": [
+          "John The Ripper",
+          "Open SSL"
+        ]
+      },
+      {
+        "Lab Name": "HUNT3R",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Linux CLI",
+          "Sublime Text 2",
+          "OSINT",
+          "Gnumeric",
+          "CyberChef"
+        ]
+      },
+      {
+        "Lab Name": "Ice Magic - Winter 23",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "Ghidra",
+          "CyberChef"
+        ]
+      },
+      {
+        "Lab Name": "ImpairDefense - Part 1",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "ProcMon"
+        ]
+      },
+      {
+        "Lab Name": "Indicators",
+        "Scenario": "Easy Digital Forensics",
+        "Tools": [
+          "PowerShell",
+          "Text Editor",
+          "Exiftool",
+          "MalwareBazaar",
+          "VirusTotal"
+        ]
+      },
+      {
+        "Lab Name": "Insider Threat",
+        "Scenario": "Hard Digital Forensics",
+        "Tools": [
+          "Evtxtract",
+          "Volatility2",
+          "MiTec Windows Registry Recovery",
+          "Notepad++"
+        ]
+      },
+      {
+        "Lab Name": "Invoice",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "ELK",
+          "wireshark-gtk",
+          "Linux CLI"
+        ]
+      },
+      {
+        "Lab Name": "IRRITATE",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "KAPE",
+          "EZTools",
+          "SysinternalsSuite",
+          "Powershell",
+          "CommandPrompt"
+        ]
+      },
+      {
+        "Lab Name": "Jakie",
+        "Scenario": "Medium Digital Forensics",
+        "Tools": [
+          "EZTools"
+        ]
+      },
+      {
+        "Lab Name": "JOPPERS",
+        "Scenario": "Easy Reverse Engineering",
+        "Tools": [
+          "x64Db",
+          "Javascript"
+        ]
+      },
+      {
+        "Lab Name": "KikiPass",
+        "Scenario": "Medium Digital Forensics",
+        "Tools": [
+          "Volatility 3",
+          "Sysinternals",
+          "Notepad++"
+        ]
+      },
+      {
+        "Lab Name": "Killer",
+        "Scenario": "Easy Reverse Engineering",
+        "Tools": [
+          "Volatility",
+          "PEStudio",
+          "ResourceHacker",
+          "HashCalc",
+          "ProcessMonitor",
+          "ProcessExplorer",
+          "Autoruns"
+        ]
+      },
+      {
+        "Lab Name": "Link",
+        "Scenario": "Easy Digital Forensics",
+        "Tools": [
+          "Process Explorer",
+          "findstr",
+          "certutil"
+        ]
+      },
+      {
+        "Lab Name": "LinTro",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "Procmon",
+          "readelf",
+          "strace",
+          "meld"
+        ]
+      },
+      {
+        "Lab Name": "LinuxSeries - Persistence",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Linux CLI"
+        ]
+      },
+      {
+        "Lab Name": "Little Helper - Winter 23",
+        "Scenario": "Hard Incident Response",
+        "Tools": [
+          "Chainsaw",
+          "KDiff3",
+          "PowerShell",
+          "Wireshark",
+          "MFTAnalyze.py",
+          "EZViewer",
+          "RBCMD",
+          "CyberChef",
+          "Notepad++",
+          "WinRAR"
+        ]
+      },
+      {
+        "Lab Name": "Logger",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "HashCalc",
+          "Regshot",
+          "ResourceHacker",
+          "Sysinternals",
+          "Wireshark"
+        ]
+      },
+      {
+        "Lab Name": "LOL",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "IDA",
+          "Sysinternals",
+          "Uncompyle"
+        ]
+      },
+      {
+        "Lab Name": "Lola La Chata - Halloween 23",
+        "Scenario": "Medium Digital Forensics",
+        "Tools": [
+          "silenteye",
+          "openpuff",
+          "OSINT",
+          "chromehistoryviewer"
+        ]
+      },
+      {
+        "Lab Name": "Maldroid",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "Apktool",
+          "jadx",
+          "dex2jar-tools",
+          "bytecodeviewer"
+        ]
+      },
+      {
+        "Lab Name": "Marionette",
+        "Scenario": "Medium Digital Forensics",
+        "Tools": [
+          "LibreOffice",
+          "Text Editor",
+          "CLI"
+        ]
+      },
+      {
+        "Lab Name": "Marksman",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "PersistenceSniper",
+          "PowerShell",
+          "Event Viewer"
+        ]
+      },
+      {
+        "Lab Name": "Midnite",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Volatility3",
+          "Timeline Explorer",
+          "CyberChef",
+          "OSINT",
+          "Browserling"
+        ]
+      },
+      {
+        "Lab Name": "Miner",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "Network Miner",
+          "Wireshark"
+        ]
+      },
+      {
+        "Lab Name": "Mon",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "Sysmon",
+          "Notepad++"
+        ]
+      },
+      {
+        "Lab Name": "Monitor",
+        "Scenario": "Easy Reverse Engineering",
+        "Tools": [
+          "ProcMon"
+        ]
+      },
+      {
+        "Lab Name": "Multi Stages",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Wireshark",
+          "Volatility"
+        ]
+      },
+      {
+        "Lab Name": "Multi Stages 2",
+        "Scenario": "Hard Incident Response",
+        "Tools": []
+      },
+      {
+        "Lab Name": "Neem",
+        "Scenario": "Easy Reverse Engineering",
+        "Tools": [
+          "HashCalc",
+          "PowerShell",
+          "PeStudio",
+          "Detect It Easy",
+          "API Monitor"
+        ]
+      },
+      {
+        "Lab Name": "Nimbus - Halloween 23",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "CyberChef",
+          "Notepad++",
+          "JSON Viewer",
+          "Sublime Text",
+          "ChatGPT"
+        ]
+      },
+      {
+        "Lab Name": "Noted",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "PowerShell",
+          "OneNote",
+          "Text Editor"
+        ]
+      },
+      {
+        "Lab Name": "Obfuscated",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Text Editor"
+        ]
+      },
+      {
+        "Lab Name": "Pandemic",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "Regshot",
+          "Sysinternals",
+          "PEView"
+        ]
+      },
+      {
+        "Lab Name": "ParkPOT",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "EZTools"
+        ]
+      },
+      {
+        "Lab Name": "Parse-Zilla",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Linux CLI",
+          "jq"
+        ]
+      },
+      {
+        "Lab Name": "PE",
+        "Scenario": "Easy Security Operations",
+        "Tools": [
+          "ELK"
+        ]
+      },
+      {
+        "Lab Name": "Peak",
+        "Scenario": "Medium Security Operations",
+        "Tools": [
+          "ELK"
+        ]
+      },
+      {
+        "Lab Name": "PEAK 2",
+        "Scenario": "Medium Security Operations",
+        "Tools": [
+          "Wireshark",
+          "Linux CLI",
+          "Text Editor"
+        ]
+      },
+      {
+        "Lab Name": "Phishy v1",
+        "Scenario": "Easy Security Operations",
+        "Tools": [
+          "Web Browser",
+          "Text Editor",
+          "Linux CLI"
+        ]
+      },
+      {
+        "Lab Name": "Phishy V2",
+        "Scenario": "Hard Security Operations",
+        "Tools": [
+          "Text Editor",
+          "Browser"
+        ]
+      },
+      {
+        "Lab Name": "Photo",
+        "Scenario": "Easy Reverse Engineering",
+        "Tools": [
+          "Linux CLI",
+          "jpegdump.py",
+          "cyberchef"
+        ]
+      },
+      {
+        "Lab Name": "PHP",
+        "Scenario": "Medium Threat Intelligence",
+        "Tools": [
+          "Detect It Easy",
+          "PEStudio",
+          "Sysinternals",
+          "Notepad++",
+          "VirusTotal"
+        ]
+      },
+      {
+        "Lab Name": "Pie",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Linux CLI"
+        ]
+      },
+      {
+        "Lab Name": "Piggy",
+        "Scenario": "Easy Security Operations",
+        "Tools": [
+          "Wireshark",
+          "ATT&CK",
+          "OSINT"
+        ]
+      },
+      {
+        "Lab Name": "Pilot",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "ProcMon"
+        ]
+      },
+      {
+        "Lab Name": "Plugout",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "CVE-2024-2879",
+          "Notepad++",
+          "Log Analysis"
+        ]
+      },
+      {
+        "Lab Name": "Poor Joe",
+        "Scenario": "Medium Digital Forensics",
+        "Tools": [
+          "Volatility",
+          "Photorec",
+          "clamAV",
+          "Strings"
+        ]
+      },
+      {
+        "Lab Name": "Pretium",
+        "Scenario": "Medium Incident Response",
+        "Tools": [
+          "Wireshark",
+          "TShark",
+          "NetWitness",
+          "CyberChef"
+        ]
+      },
+      {
+        "Lab Name": "Pretium v2",
+        "Scenario": "Hard Digital Forensics",
+        "Tools": [
+          "Wireshark-GTK",
+          "CyberChef",
+          "Steghide",
+          "PacketWhisper"
+        ]
+      },
+      {
+        "Lab Name": "Print",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "Wireshark",
+          "Event Viewer"
+        ]
+      },
+      {
+        "Lab Name": "ProcessWin",
+        "Scenario": "Easy Incident Response",
+        "Tools": [
+          "Linux CLI",
+          "Text Editor"
+        ]
+      },
+      {
+        "Lab Name": "PSYPANDA",
+        "Scenario": "Hard Reverse Engineering",
+        "Tools": [
+          "Ghidra",
+          "CyberChef",
+          "Malcat"
+        ]
+      },
+      {
+        "Lab Name": "Qbot",
+        "Scenario": "Medium Reverse Engineering",
+        "Tools": [
+          "Browser",
+          "Notepad++",
+          "PowerShell",
+          "Process Explorer",
+          "Process Monitor",
+          "Registry Editor"
+        ]
+      }
+    ]
+  
+  
+  function searchLabs() {
+      const searchInput = document.getElementById('searchInput').value.toLowerCase();
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = '';
+  
+      const matchingLabs = labData.filter(lab => 
+          lab.Tools.some(tool => tool.toLowerCase().includes(searchInput))
+      );
+  
+      if (matchingLabs.length === 0) {
+          resultsContainer.innerHTML = '<p>No labs found for the given tool.</p>';
+      } else {
+          matchingLabs.forEach(lab => {
+              const labElement = document.createElement('div');
+              labElement.className = 'lab-item';
+              labElement.innerHTML = `
+                  <h3>${lab['Lab Name']}</h3>
+                  <p><strong>Scenario:</strong> ${lab.Scenario}</p>
+                  <p><strong>Tools:</strong> ${lab.Tools.join(', ')}</p>
+              `;
+              resultsContainer.appendChild(labElement);
+          });
+      }
+  }
