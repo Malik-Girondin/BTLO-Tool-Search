@@ -1173,6 +1173,12 @@ const labData = [
       const resultsContainer = document.getElementById('results');
       resultsContainer.innerHTML = '';
   
+      // Check if the search input is empty
+      if (searchInput.trim() === '') {
+          resultsContainer.innerHTML = '<p></p>';
+          return; // Exit the function if the input is empty
+      }
+  
       const matchingLabs = labData.filter(lab => 
           lab.Tools.some(tool => tool.toLowerCase().includes(searchInput))
       );
@@ -1192,3 +1198,13 @@ const labData = [
           });
       }
   }
+
+  // Add event listener for input event to show results as the user types
+  document.getElementById('searchInput').addEventListener('input', searchLabs);
+
+  // Add event listener for Enter key
+  document.getElementById('searchInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+          searchLabs();
+      }
+  });
