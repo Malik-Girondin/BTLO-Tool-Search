@@ -1,6 +1,6 @@
 # BTLO-Tool-Search
 
-This is a tool search for the Blue Team Labs Online Platform: [Blue Team Labs Online](https://blueteamlabs.online) powered by [Security Blue Team](https://securityblue.team).
+This is a tool search for the Blue Team Labs Online Platform: [Blue Team Labs Online](https://blueteamlabs.online) powered by [Security Blue Team](https://securityblue.team). This is a great way to filter through the many labs to find the perfect one for your needs—without signing up intially. The project will be updated as new labs are added.
 
 ## Features
 - Search for cybersecurity labs by entering the name of a tool.
