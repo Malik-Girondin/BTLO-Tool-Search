@@ -1191,8 +1191,8 @@ const labData = [
               labElement.className = 'lab-item';
               labElement.innerHTML = `
                   <h3>${lab['Lab Name']}</h3>
-                  <p><strong>Scenario:</strong> ${lab.Scenario}</p>
-                  <p><strong>Tools:</strong> ${lab.Tools.join(', ')}</p>
+                  <p><strong style="color: #00bfff;">Scenario:</strong> <span style="color: #ffffff; font-weight: normal;">${lab.Scenario}</span></p>
+                  <p><strong style="color: #00bfff;">Tools:</strong> <span style="color: #ffffff; font-weight: normal;">${lab.Tools.join(', ')}</span></p>
               `;
               resultsContainer.appendChild(labElement);
           });
